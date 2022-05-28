@@ -1,0 +1,188 @@
+$primary-color: #ffe92e;
+$secondary-color: #222;
+$teciary-color: #fff;
+$font-color: #aaa;
+$background-color: #fff;
+
+$box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.6);
+
+$limit: 10;
+$unit: 8px;
+
+// mixin - bloques de cofigo
+@mixin reset-pm {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin btn($background-color, $color, $bold) {
+    cursor: pointer;
+    color: $color;
+    background-color: $background-color;
+    border-radius: 50px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+    @if($bold =="true") {
+        font-weight: bold;
+    }
+
+    @else {
+        font-weight: normal;
+    }
+}
+
+* {
+    @include reset-pm;
+    box-sizing: border-box;
+}
+
+//funcion
+@function size($value) {
+    @return $value +$unit;
+}
+
+body {
+    padding: 2rem;
+    background-color: $background-color;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+.btn {
+    &.btn-cta {
+        @include btn($secondary-color, $teciary-color, "true");
+
+        &:hover {
+            @include btn($secondary-color, $teciary-color, "true");
+            box-shadow: $box-shadow;
+        }
+    }
+
+    ;
+
+    &hover {
+        @include btn($teciary-color, $secondary-color, "true")
+    }
+}
+
+.logo {
+    color: #3A3867;
+    span{
+        color: #FF7264;
+    }
+    i{
+        color: #222;
+    }
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+// .container {
+//     background-color: white;
+//     margin: 100px auto;
+//     width: 1280px;
+//     padding: 50px;
+//     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 01);
+//     background-size: 100% 100%;
+//     border-radius: 8px
+// }
+
+
+//adidacion de elementos
+ul {
+    @include reset-pm();
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    li {
+        a {
+            @include btn($background-color: $primary-color, $color: $secondary-color, $bold: "true");
+
+            &:hover {
+                @include btn($background-color: $secondary-color, $color: $teciary-color, $bold: "true");
+                box-shadow: $box-shadow;
+            }
+
+        }
+    }
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-screen {
+    max-width: 100%;
+    // background-color: #222;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    .col {
+        width: 50%;
+    }
+
+    .col-30 {
+        width: 30%;
+    }
+
+    .col-70 {
+        width: 70%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+
+m-auto {
+    margin: 0 auto;
+}
+
+@for $i from 1 to $limit {
+    .m-#{$i} {
+        margin: $i * $unit;
+    }
+}
+
+@for $i from 1 to $limit {
+    .p-#{$i} {
+        padding: $i * $unit;
+    }
+
+}
+
+@for $i from 1 to $limit {
+    .py-#{$i} {
+        padding: $i * $unit 0;
+    }
+}
+
+@for $i from 1 to 4 {
+    .w-#{$i} {
+        padding: $i * $unit 0;
+    }
+}

@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.btn.btn-cta {
+  cursor: pointer;
+  color: #fff;
+  background-color: #222;
+  border-radius: 50px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+.btn.btn-cta:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #222;
+  border-radius: 50px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.6);
+}
+.btnhover {
+  cursor: pointer;
+  color: #222;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.logo {
+  color: #3A3867;
+}
+.logo span {
+  color: #FF7264;
+}
+.logo i {
+  color: #222;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 48px;
+}
+
+h3 {
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+ul li a {
+  cursor: pointer;
+  color: #222;
+  background-color: #ffe92e;
+  border-radius: 50px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+ul li a:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #222;
+  border-radius: 50px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-screen {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.row .col {
+  width: 50%;
+}
+.row .col-30 {
+  width: 30%;
+}
+.row .col-70 {
+  width: 70%;
+}
+.row .col-70 img {
+  max-width: 100%;
+}
+
+m-auto {
+  margin: 0 auto;
+}
+
+.m-1 {
+  margin: 8px;
+}
+
+.m-2 {
+  margin: 16px;
+}
+
+.m-3 {
+  margin: 24px;
+}
+
+.m-4 {
+  margin: 32px;
+}
+
+.m-5 {
+  margin: 40px;
+}
+
+.m-6 {
+  margin: 48px;
+}
+
+.m-7 {
+  margin: 56px;
+}
+
+.m-8 {
+  margin: 64px;
+}
+
+.m-9 {
+  margin: 72px;
+}
+
+.p-1 {
+  padding: 8px;
+}
+
+.p-2 {
+  padding: 16px;
+}
+
+.p-3 {
+  padding: 24px;
+}
+
+.p-4 {
+  padding: 32px;
+}
+
+.p-5 {
+  padding: 40px;
+}
+
+.p-6 {
+  padding: 48px;
+}
+
+.p-7 {
+  padding: 56px;
+}
+
+.p-8 {
+  padding: 64px;
+}
+
+.p-9 {
+  padding: 72px;
+}
+
+.py-1 {
+  padding: 8px 0;
+}
+
+.py-2 {
+  padding: 16px 0;
+}
+
+.py-3 {
+  padding: 24px 0;
+}
+
+.py-4 {
+  padding: 32px 0;
+}
+
+.py-5 {
+  padding: 40px 0;
+}
+
+.py-6 {
+  padding: 48px 0;
+}
+
+.py-7 {
+  padding: 56px 0;
+}
+
+.py-8 {
+  padding: 64px 0;
+}
+
+.py-9 {
+  padding: 72px 0;
+}
+
+.w-1 {
+  padding: 8px 0;
+}
+
+.w-2 {
+  padding: 16px 0;
+}
+
+.w-3 {
+  padding: 24px 0;
+}
+
+/*# sourceMappingURL=main.css.map */
